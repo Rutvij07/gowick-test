@@ -1,0 +1,133 @@
+.App {
+  text-align: center;
+
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.home-page{
+  background-color: #1D1E1F;
+  height: 40vh;
+
+}
+
+.main-container-image{
+  width: 100px; 
+}
+.main-container-text{
+  color: white;
+}
+
+.gradient-text {
+  background-color: red;
+  background-image: linear-gradient(45deg, #f3ec78, #af4261);
+  
+  background-size: 100%;
+  background-repeat: repeat;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 45px;
+  padding: 45px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.container {
+  padding: 2px 16px;
+}
+
+.paytm-logo{
+  width:90px
+}
+
+.gift-container{
+  /* position: relative;
+  top: -88px; */
+}
+.gift-input{
+    background: #f5f6f9;
+    border: none;
+    border-radius: 10px;
+    padding: 25px 20px;  
+    width: 100%;
+    border-radius:100px;
+    text-align: center;
+    outline: none !important
+  }
+
+input::placeholder{
+  text-align: center;
+}
+
+.submit{
+  background: -webkit-linear-gradient(0deg, #4514c7 0%, #1f64fd 49.84%, #30e8ff 99.68%);
+    border: none;
+    height: 70px;
+    width: 100%;
+    border-radius:100px;
+    outline: none !important
+}
+.submit-disabled{
+  background: #f5f6f9;;
+    border: none;
+    height: 70px;
+    width: 100%;
+    border-radius:100px;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .main-container-image{
+    width: 200px; 
+  }
+  
+  .home-page {
+    text-align: center;
+    background-color: #1D1E1F;
+    height: 45vh
+  }
+
+  .main-container-text{
+    font-size: 2.5rem
+  }
+}
