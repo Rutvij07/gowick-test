@@ -44,7 +44,7 @@ const watchInput = watch('mobile')
                 </div>
             </div>
            <div className='gift-container'>
-                  <Container>
+                <Container>
                     <Row>
                         <Col lg={3}></Col>
                         <Col lg={6} xs={12}>
@@ -56,7 +56,7 @@ const watchInput = watch('mobile')
                                     <h2 className='gradient-text'>Gift card Rs 200</h2>
                                 </div>
                             </div>
-                        { !successPage ?   <div className=''>
+                             { !successPage ?   <div className=''>
                                 <p className='mt-3'>
                                     You have WON Paytm Gift Card of Rs 200 for <b>placing the order on Man Matters</b>
                                 </p>
@@ -86,7 +86,11 @@ const watchInput = watch('mobile')
                         </Col>
                         <Col lg={3}></Col>
                     </Row>
-                    </Container>
+                    <br/>
+                    <div  className='powered-by mb-3'>
+                        <small ><b>Powered by</b> <span><img width="70px" src='gokwik-logo.svg' alt='gokwik-logo' /></span></small>
+                    </div>
+                </Container>
             </div> 
         </div>
      </>

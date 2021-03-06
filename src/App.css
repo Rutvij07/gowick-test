@@ -81,8 +81,7 @@
 }
 
 .gift-container{
-  /* position: relative;
-  top: -88px; */
+  text-align: -webkit-center
 }
 .gift-input{
     background: #f5f6f9;
@@ -107,14 +106,27 @@ input::placeholder{
     border-radius:100px;
     outline: none !important
 }
+input[type="submit"]{
+  color:white;
+  font-weight: bold
+}
+
 .submit-disabled{
-  background: #f5f6f9;;
+    background: lightgray;;
     border: none;
     height: 70px;
     width: 100%;
     border-radius:100px;
 }
 
+.powered-by{
+  background-color: #1D1E1F;
+  color: white;
+  padding: 1px;
+  border-radius: 20px;
+  width:300px
+  
+}
 
 @media only screen and (min-width: 768px) {
   .main-container-image{
