@@ -16,7 +16,7 @@ const { register, handleSubmit,watch } = useForm();
 const watchInput = watch('mobile') 
 
   useEffect(()=>{
-      if(watchInput && watchInput.length == 10){
+      if(watchInput && watchInput.length === 10){
           setDisabled(false)
       }else{
         setDisabled(true)
@@ -24,7 +24,7 @@ const watchInput = watch('mobile')
   },[watchInput])
 
   useEffect(()=>{
-      if(localStorage.getItem('submit') == "true"){
+      if(localStorage.getItem('submit') === "true"){
           setSuccessPage(true)
       }
     },[])
@@ -38,9 +38,9 @@ const watchInput = watch('mobile')
         <>
         <div className='home-page'>
             <div className='main-container'>
-                    <img className='main-container-image' src='/man_matters.png' />
+                    <img className='main-container-image' src='/man_matters.png' alt='man_matters' />
                 <div>
-                    <h3 className='main-container-text mb-4 pb-2'><span className='gradient-text'> Congratulations</span> 🥳</h3>
+                    <h3 className='main-container-text mb-4 pb-2'><span className='gradient-text'> Congratulations</span><span role="img" aria-label="celebration"> 🥳 </span></h3>
                 </div>
             </div>
            <div className='gift-container'>
